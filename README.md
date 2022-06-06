@@ -1,5 +1,6 @@
 # Element-Emu
-Simple light-weight emulator for element
+
+A simple emulator for working with Element. This emulator works on a single node, so rather than reading or writing from a ledger, it takes create operations and writes them directly to a database. And returns resolve requests directly from the database. Not intented for real-world use, but can help to have a light server for testing create and resolve requests from a client.
 
 **Create Request**
 
