@@ -26,7 +26,7 @@ async function* generateKey() {
 
 const createDid = async() => {
 
-    const host = 'http://localhost:3000';
+    const host = 'http://localhost:4000';
 
     const keygen = generateKey();
     const { value : publicKey } = await keygen.next();
@@ -62,7 +62,7 @@ const createDid = async() => {
 
     const { id } = data.didDocument;
 
-    await sleep(10 * 1000);
+    await sleep(1 * 1000);
     const getUrl = `${host}/api/1.0/identifiers/${id}`;
 
     try {
