@@ -25,7 +25,14 @@ const formulateResponse = () => {
 				}
 			],
 			"id": publicKey.controller,
-			"verificationMethod": [publicKey],
+			"verificationMethod": [
+				{
+					"id": publicKey.id,
+					"controller": publicKey.controller,
+					"type": publicKey.type,
+					"publicKeyJwk": publicKey.publicKeyJwk
+				}
+			],
 			"authentication": [publicKey.id],
 			"assertionMethod": [publicKey.id]
 		},
