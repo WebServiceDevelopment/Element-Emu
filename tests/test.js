@@ -46,12 +46,20 @@ const formulateResponse = () => {
 		}
 	}
 
-	console.log("--- a ---");
-	console.log(JSON.stringify(did, null, 2));
+	const a = JSON.stringify(did, null, 2);
+	const b = JSON.stringify(createResponse, null, 2);
+	return a === b;
 
-	console.log("--- b ---");
-	console.log(JSON.stringify(createResponse, null, 2));
+}
+
+const formulateResolve = () => {
+
+	createResponse.didDocumentMetadata.method.published = true;
+	const a = JSON.stringify(createResponse, null, 2);
+	const b = JSON.stringify(resolveResponse, null, 2);
+	return a === b;
 
 }
 
 formulateResponse();
+formulateResolve();
