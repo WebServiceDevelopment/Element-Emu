@@ -2,6 +2,21 @@
 
 A simple emulator for working with Element. This emulator works on a single node, so rather than reading or writing from a ledger, it takes create operations and writes them directly to a database. And returns resolve requests directly from the database. Not intented for real-world use, but can help to have a light server for testing create and resolve requests from a client.
 
+## How to Use
+
+```
+git clone https://github.com/WebServiceDevelopment/Element-Emu.git
+cd Element-Emu
+npm i
+npm i pm2 -g
+pm2 start server.js
+node client.js
+```
+
+## Fixtures
+
+The responses for the server were created from the following fixtures.
+
 ### Create Request
 
 ```
