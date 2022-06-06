@@ -1,0 +1,29 @@
+{
+  "name": "element-emu",
+  "version": "1.0.0",
+  "description": "A Simple Emulator for Element Create and Resolve Reqiuests",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebServiceDevelopment/Element-Emu.git"
+  },
+  "author": "Ogawa Kousei",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/WebServiceDevelopment/Element-Emu/issues"
+  },
+  "homepage": "https://github.com/WebServiceDevelopment/Element-Emu#readme",
+  "dependencies": {
+    "@sidetree/wallet": "^0.3.1-unstable.58",
+    "axios": "^0.27.2",
+    "bip39": "^3.0.4",
+    "sleep-promise": "^9.1.0"
+  }
+}
